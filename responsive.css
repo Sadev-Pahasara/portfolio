@@ -1,0 +1,41 @@
+@media (max-width: 768px) {
+    .top2 {
+        padding: 8px;
+    }
+
+    .editor-window {
+        min-height: calc(100vh - 16px);
+    }
+
+    .editor-content {
+        grid-template-columns: 1fr;
+        padding: 35px 22px;
+        gap: 35px;
+    }
+
+    .portrait-area {
+        grid-row: 1;
+    }
+
+    .portrait-ring {
+        width: min(75vw, 290px);
+    }
+
+    .code-content h1 {
+        letter-spacing: -2px;
+    }
+
+    .editor-tab {
+        padding: 18px 10px;
+        font-size: 12px;
+    }
+
+    .window-controls {
+        margin-right: 5px;
+    }
+
+    .editor-status {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+}
