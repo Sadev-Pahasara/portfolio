@@ -42,7 +42,6 @@ body::-webkit-scrollbar{
     display: flex;
     flex-direction: row; 
     gap: 20px;
-    margin-top: 20px;
     background: rgba(0, 0, 0, 0.201);
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
