@@ -12,6 +12,7 @@
 
     <!-- Fonts -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -22,23 +23,35 @@
 
     <div class="overlay"></div>
 
-    <div class="nav">
-        <ul>
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#contact">PROJECTS</a></li>
-        </ul>
-        
-        <p>
-            SADEV P..
-        </p>
+    <nav class="nav">
+        <a href="#home" class="nav-logo2">SADEV P.</a>
 
-        <ul>
-            <li><a href="#home">SERVICE</a></li>
-            <li><a href="#about">SKILL</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-        </ul>
-    </div>
+        <button class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#About">ABOUT</a></li>
+                <li><a href="#Portfolio">PROJECTS</a></li>
+            </ul>
+
+            <a href="#home" class="nav-logo">SADEV P.</a>
+
+            <ul>
+                <li><a href="#Services">SERVICE</a></li>
+                <li><a href="#Skills">SKILL</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <section class="top" id="home">
 
@@ -139,10 +152,11 @@
             </div>
             </section>
 
+            
             <div class="cards">
 
                 <div class="dom">
-                <span>10+</span>
+                    <span>10+</span>
                     <h2>Projects</h2>
                 </div>
 
@@ -150,12 +164,12 @@
                     <span>2+</span>
                     <h2>Years Building</h2>
                 </div>
-                
+
                 <div class="dom">
                     <span>10+</span>
                     <h2>Languages</h2>
                 </div>
-                
+
                 <div class="dom">
                     <span>10+</span>
                     <h2>Frameworks</h2>
@@ -163,41 +177,1537 @@
 
             </div>
 
-        </div>
-
-        <div class="about">
-            <p>
-                    I’m a passionate and motivated Software Developer with a strong interest in building modern, responsive, scalable, and user-friendly web and mobile applications. 
-                    I enjoy transforming ideas and real-world problems into practical digital solutions through clean, efficient, and well-structured code.
-                    I have a strong foundation in technologies such as HTML, CSS, JavaScript, Java, C++, C#, PHP, MySQL, and SQLite, and I continuously work on expanding my knowledge across different areas of software development. 
-                    I’m particularly interested in full-stack development, application development, database management, UI/UX design, and modern web technologies.
-            </p>
-            <img src="SRC/my.png" alt="" srcset="">
-            
-            <p><br>My approach to development focuses on creating applications that are not only visually appealing but also functional, reliable, maintainable, and easy to use. 
-                        I believe that good software should combine thoughtful design with efficient programming and a strong understanding of the user's needs.
-                        Throughout my development journey, I have worked on various academic, personal, and practical projects that have helped me strengthen my problem-solving, debugging, database, and software development skills. 
-                        These projects have given me valuable experience in understanding requirements, designing application structures, developing features, integrating databases, testing functionality, and improving the overall user experience.
-            </p>
-       
-            <p><br> I enjoy learning new programming languages, frameworks, tools, and development methodologies. Technology is constantly evolving, and I believe that continuous learning is an essential part of becoming a better developer. 
-                    I regularly explore new concepts and experiment with different technologies to improve my development workflow and broaden my technical knowledge.
-                    I’m also passionate about writing clean, organized, and efficient code. I pay attention to application structure, performance, responsiveness, security, and maintainability while developing projects. 
-                    I enjoy analyzing problems from different perspectives and finding simple yet effective solutions to complex challenges.
-                    My long-term goal is to become a highly skilled Full-Stack Software Developer capable of designing and developing complete applications from concept to deployment. 
-                    I aim to contribute to meaningful projects, work with modern technologies, collaborate with other developers, and continuously improve both my technical and professional skills.
-                    I’m always open to new challenges, opportunities to learn, and projects that allow me to apply my knowledge in practical ways. Every project is an opportunity to learn something new, improve my skills, and become a better developer.
-            </p>
 
         </div>
 
-        <div class="projects">
-            
-        </div>
+        <section class="about-section" id="About">
 
-        
+            <div class="about-container">
+
+                <!-- Section Heading -->
+                <div class="about-header">
+
+                    <p class="about-label">GET TO KNOW ME</p>
+
+                    <div class="about-code">
+                        <span class="java">public class</span>
+                        <span class="normal"> AboutMe </span>
+                        <span class="java">extends</span>
+                        <span class="normal"> Introduction </span>
+                        <span class="java">{</span>
+                    </div>
+
+                    <h2>
+                        Turning Ideas Into
+                        <span class="about-highlight">Digital Experiences.</span>
+                    </h2>
+
+                    <p class="about-subtitle">
+                        A little about who I am and what I do.
+                    </p>
+
+                </div>
+
+                <!-- Main Content -->
+                <div class="about-content">
+
+                    <!-- Left Side: Introduction -->
+                    <div class="about-text">
+
+                        <p class="about-greeting">
+                            Hello, World! <span class="about-wave">✦</span>
+                        </p>
+
+                        <h3>
+                            I'm a <span>Software Developer</span>
+                            passionate about building meaningful digital solutions.
+                        </h3>
+
+                        <p class="about-description">
+                            I'm a passionate software developer focused on building
+                            modern, responsive, and user-friendly applications.
+                            I enjoy transforming ideas into practical digital
+                            solutions through clean code, thoughtful design,
+                            and continuous learning.
+                        </p>
+
+                        <p class="about-description">
+                            My interests include front-end and back-end development,
+                            database management, and UI/UX design. I enjoy exploring
+                            new technologies, solving problems, and creating
+                            applications that combine functionality with a seamless
+                            user experience.
+                        </p>
+
+                        <p class="about-description">
+                            I believe great software is more than just code.
+                            It's about solving real-world problems, creating
+                            meaningful experiences, and improving with every project.
+                        </p>
+
+                        <!-- Buttons -->
+                        <div class="about-actions">
+
+                            <a href="#Portfolio" class="about-btn primary-btn">
+                                <span>Explore My Projects</span>
+                                <i class="ri-arrow-right-up-line"></i>
+                            </a>
+
+                            <a href="#Contact" class="about-btn secondary-btn">
+                                <span>Let's Talk</span>
+                                <i class="ri-chat-3-line"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Right Side: Highlights -->
+                    <div class="about-highlights">
+
+                        <div class="about-card">
+                            <div class="about-card-icon">
+                                <i class="ri-code-s-slash-line"></i>
+                            </div>
+                            <div>
+                                <h4>Development</h4>
+                                <p>
+                                    Building functional, responsive, and maintainable
+                                    applications.
+                                </p>
+                            </div>
+                            <span class="about-card-number">01</span>
+                        </div>
+
+                        <div class="about-card">
+                            <div class="about-card-icon">
+                                <i class="ri-palette-line"></i>
+                            </div>
+                            <div>
+                                <h4>UI/UX Design</h4>
+                                <p>
+                                    Creating intuitive interfaces with thoughtful
+                                    user experiences.
+                                </p>
+                            </div>
+                            <span class="about-card-number">02</span>
+                        </div>
+
+                        <div class="about-card">
+                            <div class="about-card-icon">
+                                <i class="ri-database-2-line"></i>
+                            </div>
+                            <div>
+                                <h4>Problem Solving</h4>
+                                <p>
+                                    Turning complex requirements into practical
+                                    software solutions.
+                                </p>
+                            </div>
+                            <span class="about-card-number">03</span>
+                        </div>
+
+                        <div class="about-card">
+                            <div class="about-card-icon">
+                                <i class="ri-lightbulb-line"></i>
+                            </div>
+                            <div>
+                                <h4>Continuous Growth</h4>
+                                <p>
+                                    Learning new technologies and improving my
+                                    development skills.
+                                </p>
+                            </div>
+                            <span class="about-card-number">04</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Closing Java Brace -->
+                <div class="about-code-footer">
+                    <span class="java">}</span>
+                    <span class="about-code-comment">// Always learning. Always building.</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="projects-section" id="Portfolio">
+
+            <div class="projects-container">
+
+                <!-- Header -->
+                <div class="projects-header">
+
+                    <p class="projects-label">02 / SELECTED WORK</p>
+
+                    <div class="projects-code">
+                        <span class="java">public class</span>
+                        <span class="normal"> Projects </span>
+                        <span class="java">extends</span>
+                        <span class="normal"> Creativity </span>
+                        <span class="java">{</span>
+                    </div>
+
+                    <div class="projects-heading-row">
+                        <div>
+                            <h2>
+                                Ideas into
+                                <span>Reality.</span>
+                            </h2>
+
+                            <p class="projects-description">
+                                A collection of projects built through creativity,
+                                problem-solving, and code.
+                            </p>
+                        </div>
+
+                        <span class="projects-count">SELECTED PROJECTS — 06</span>
+                    </div>
+
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+
+                    <!-- Project 01 -->
+                    <article class="project-card project-featured">
+
+                        <a href="YOUR_PROJECT_URL"
+                        class="project-preview"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="View Project Orion">
+
+                            <img
+                                src="SRC/orion.png"
+                                alt="Project ORION AI assistant preview"
+                                loading="lazy"
+                            >
+
+                            <span class="project-preview-label">
+                                FEATURED PROJECT
+                            </span>
+
+                            <span class="project-open">
+                                <i class="ri-arrow-up-right-line"></i>
+                            </span>
+
+                        </a>
+
+                        <div class="project-info">
+
+                            <div class="project-meta">
+                                <span>01 / 06</span>
+                                <span>AI DEVELOPMENT</span>
+                            </div>
+
+                            <h3>Project ORION</h3>
+
+                            <p>
+                                A personal AI assistant designed to bring together
+                                intelligent interactions, useful commands, and a
+                                futuristic desktop experience.
+                            </p>
+
+                            <div class="project-bottom">
+
+                                <div class="project-tags">
+                                    <span>Python</span>
+                                    <span>PySide6</span>
+                                    <span>AI</span>
+                                </div>
+
+                                <a href="YOUR_GITHUB_URL"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-link"
+                                aria-label="View Project ORION source code">
+                                    <i class="ri-github-line"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- Project 02 -->
+                    <article class="project-card">
+
+                        <a href="YOUR_PROJECT_URL"
+                        class="project-preview"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="View Cozy Comfort">
+
+                            <img
+                                src="SRC/kmc.png"
+                                alt="Cozy Comfort inventory and ordering system"
+                                loading="lazy"
+                            >
+
+                            <span class="project-open">
+                                <i class="ri-arrow-up-right-line"></i>
+                            </span>
+
+                        </a>
+
+                        <div class="project-info">
+
+                            <div class="project-meta">
+                                <span>02 / 06</span>
+                                <span>WEB APPLICATION</span>
+                            </div>
+
+                            <h3>Cozy Comfort</h3>
+
+                            <p>
+                                A database-driven ordering and inventory management
+                                application connecting manufacturers, distributors,
+                                sellers, and customers.
+                            </p>
+
+                            <div class="project-bottom">
+
+                                <div class="project-tags">
+                                    <span>ASP.NET</span>
+                                    <span>C#</span>
+                                    <span>SQL</span>
+                                </div>
+
+                                <a href="YOUR_GITHUB_URL"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-link"
+                                aria-label="View Cozy Comfort source code">
+                                    <i class="ri-github-line"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- Project 03 -->
+                    <article class="project-card">
+
+                        <a href="YOUR_PROJECT_URL"
+                        class="project-preview"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="View LuxeVista">
+
+                            <img
+                                src="SRC/luxe.jpeg"
+                                alt="LuxeVista hotel mobile application"
+                                loading="lazy"
+                            >
+
+                            <span class="project-open">
+                                <i class="ri-arrow-up-right-line"></i>
+                            </span>
+
+                        </a>
+
+                        <div class="project-info">
+
+                            <div class="project-meta">
+                                <span>03 / 06</span>
+                                <span>MOBILE APPLICATION</span>
+                            </div>
+
+                            <h3>LuxeVista</h3>
+
+                            <p>
+                                A hotel-focused mobile application designed to
+                                deliver a refined interface and a convenient
+                                hospitality experience.
+                            </p>
+
+                            <div class="project-bottom">
+
+                                <div class="project-tags">
+                                    <span>Mobile</span>
+                                    <span>UI/UX</span>
+                                    <span>Database</span>
+                                </div>
+
+                                <a href="YOUR_GITHUB_URL"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-link"
+                                aria-label="View LuxeVista source code">
+                                    <i class="ri-github-line"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- Project 04 -->
+                    <article class="project-card">
+
+                        <a href="YOUR_PROJECT_URL"
+                        class="project-preview"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="View SkillPro Institute">
+
+                            <video
+                                src="SRC/skill pro.mp4"
+                                autoplay
+                                muted
+                                loop
+                                playsinline
+                                preload="metadata"
+                                aria-label="Project ORION demonstration"
+                            ></video>
+
+                            <span class="project-open">
+                                <i class="ri-arrow-up-right-line"></i>
+                            </span>
+
+                        </a>
+
+                        <div class="project-info">
+
+                            <div class="project-meta">
+                                <span>04 / 06</span>
+                                <span>FULL-STACK DEVELOPMENT</span>
+                            </div>
+
+                            <h3>SkillPro Institute</h3>
+
+                            <p>
+                                A learning platform concept focused on organizing
+                                educational content and providing a user-friendly
+                                online learning experience.
+                            </p>
+
+                            <div class="project-bottom">
+
+                                <div class="project-tags">
+                                    <span>Web</span>
+                                    <span>Backend</span>
+                                    <span>Database</span>
+                                </div>
+
+                                <a href="YOUR_GITHUB_URL"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-link"
+                                aria-label="View SkillPro source code">
+                                    <i class="ri-github-line"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- Project 05 -->
+                    <article class="project-card">
+
+                        <a href="YOUR_PROJECT_URL"
+                        class="project-preview"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="View Sagara Construction">
+
+                            <video
+                                src="SRC/LuxuryHotel.mp4"
+                                autoplay
+                                muted
+                                loop
+                                playsinline
+                                preload="metadata"
+                                aria-label="Project ORION demonstration"
+                            ></video>
+
+                            <span class="project-open">
+                                <i class="ri-arrow-up-right-line"></i>
+                            </span>
+
+                        </a>
+
+                        <div class="project-info">
+
+                            <div class="project-meta">
+                                <span>05 / 06</span>
+                                <span>WEB DEVELOPMENT</span>
+                            </div>
+
+                            <h3>Sagara Construction</h3>
+
+                            <p>
+                                A construction company website designed to present
+                                services, communicate the brand, and provide a
+                                responsive browsing experience.
+                            </p>
+
+                            <div class="project-bottom">
+
+                                <div class="project-tags">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                </div>
+
+                                <a href="YOUR_GITHUB_URL"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-link"
+                                aria-label="View Sagara Construction source code">
+                                    <i class="ri-github-line"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- Project 06 -->
+                    <article class="project-card">
+
+                        <a href="YOUR_PROJECT_URL"
+                        class="project-preview"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="View S2A Chemistry">
+
+                            <img
+                                src="SRC/sentinalX.jpeg"
+                                alt="SentinalX security system interface"
+                                loading="lazy"
+                            >
+
+                            <span class="project-open">
+                                <i class="ri-arrow-up-right-line"></i>
+                            </span>
+
+                        </a>
+
+                        <div class="project-info">
+
+                            <div class="project-meta">
+                                <span>06 / 06</span>
+                                <span>MOBILE DEVELOPMENT</span>
+                            </div>
+
+                            <h3>S2A Chemistry</h3>
+
+                            <p>
+                                An educational website project focused on presenting
+                                chemistry-related content through a clear and
+                                accessible web interface.
+                            </p>
+
+                            <div class="project-bottom">
+
+                                <div class="project-tags">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                </div>
+
+                                <a href="YOUR_GITHUB_URL"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-link"
+                                aria-label="View S2A Chemistry source code">
+                                    <i class="ri-github-line"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <!-- Footer -->
+                <div class="projects-footer">
+                    <span class="java">}</span>
+                    <span>// More ideas. More projects. More to come.</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="services-section" id="Services">
+
+            <div class="services-container">
+
+                <!-- Section Header -->
+                <div class="services-header">
+
+                    <p class="services-label">03 / WHAT I DO</p>
+
+                    <div class="services-code">
+                        <span class="java">public class</span>
+                        <span class="normal"> Services </span>
+                        <span class="java">extends</span>
+                        <span class="normal"> Expertise </span>
+                        <span class="java">{</span>
+                    </div>
+
+                    <div class="services-heading-row">
+                        <div>
+                            <h2>
+                                Solutions Built
+                                <span>With Purpose.</span>
+                            </h2>
+
+                            <p class="services-description">
+                                From initial ideas to complete digital solutions,
+                                I combine technology, creativity, and thoughtful
+                                design to bring projects to life.
+                            </p>
+                        </div>
+
+                        <span class="services-count">
+                            SERVICES — 06
+                        </span>
+                    </div>
+
+                </div>
+
+                <!-- Services Grid -->
+                <div class="services-grid">
+
+                    <!-- Service 01 -->
+                    <article class="service-card">
+
+                        <div class="service-card-top">
+                            <div class="service-icon">
+                                <i class="ri-code-s-slash-line"></i>
+                            </div>
+                            <span class="service-number">01</span>
+                        </div>
+
+                        <h3>Web Development</h3>
+
+                        <p>
+                            Building responsive and user-friendly websites using
+                            modern technologies for high performance and engaging
+                            digital experiences.
+                        </p>
+
+                        <div class="service-tags">
+                            <span>Frontend</span>
+                            <span>Backend</span>
+                            <span>Responsive</span>
+                        </div>
+
+                        <div class="service-card-footer">
+                            <span>WEB / DEVELOPMENT</span>
+                            <i class="ri-arrow-right-up-line"></i>
+                        </div>
+
+                    </article>
+
+                    <!-- Service 02 -->
+                    <article class="service-card">
+
+                        <div class="service-card-top">
+                            <div class="service-icon">
+                                <i class="ri-terminal-box-line"></i>
+                            </div>
+                            <span class="service-number">02</span>
+                        </div>
+
+                        <h3>Software Development</h3>
+
+                        <p>
+                            Developing custom software solutions with a focus on
+                            functionality, usability, maintainability, and
+                            seamless performance.
+                        </p>
+
+                        <div class="service-tags">
+                            <span>Applications</span>
+                            <span>Databases</span>
+                            <span>Problem Solving</span>
+                        </div>
+
+                        <div class="service-card-footer">
+                            <span>SOFTWARE / ENGINEERING</span>
+                            <i class="ri-arrow-right-up-line"></i>
+                        </div>
+
+                    </article>
+
+                    <!-- Service 03 -->
+                    <article class="service-card">
+
+                        <div class="service-card-top">
+                            <div class="service-icon">
+                                <i class="ri-gamepad-line"></i>
+                            </div>
+                            <span class="service-number">03</span>
+                        </div>
+
+                        <h3>Game Development</h3>
+
+                        <p>
+                            Exploring interactive game experiences with Unreal
+                            Engine 5, from creative concepts to gameplay systems
+                            and immersive environments.
+                        </p>
+
+                        <div class="service-tags">
+                            <span>Unreal Engine 5</span>
+                            <span>Gameplay</span>
+                            <span>3D</span>
+                        </div>
+
+                        <div class="service-card-footer">
+                            <span>GAMES / INTERACTIVE</span>
+                            <i class="ri-arrow-right-up-line"></i>
+                        </div>
+
+                    </article>
+
+                    <!-- Service 04 -->
+                    <article class="service-card">
+
+                        <div class="service-card-top">
+                            <div class="service-icon">
+                                <i class="ri-layout-masonry-line"></i>
+                            </div>
+                            <span class="service-number">04</span>
+                        </div>
+
+                        <h3>UI/UX Design</h3>
+
+                        <p>
+                            Designing intuitive, accessible, and visually
+                            engaging interfaces for web and mobile applications,
+                            with a focus on user experience.
+                        </p>
+
+                        <div class="service-tags">
+                            <span>Wireframes</span>
+                            <span>Prototyping</span>
+                            <span>Figma</span>
+                        </div>
+
+                        <div class="service-card-footer">
+                            <span>DESIGN / EXPERIENCE</span>
+                            <i class="ri-arrow-right-up-line"></i>
+                        </div>
+
+                    </article>
+
+                    <!-- Service 05 -->
+                    <article class="service-card">
+
+                        <div class="service-card-top">
+                            <div class="service-icon">
+                                <i class="ri-lightbulb-flash-line"></i>
+                            </div>
+                            <span class="service-number">05</span>
+                        </div>
+
+                        <h3>Consulting</h3>
+
+                        <p>
+                            Helping turn technical ideas into practical plans
+                            through technology recommendations, solution
+                            planning, and development guidance.
+                        </p>
+
+                        <div class="service-tags">
+                            <span>Planning</span>
+                            <span>Technology</span>
+                            <span>Guidance</span>
+                        </div>
+
+                        <div class="service-card-footer">
+                            <span>STRATEGY / SOLUTIONS</span>
+                            <i class="ri-arrow-right-up-line"></i>
+                        </div>
+
+                    </article>
+
+                    <!-- Service 06 -->
+                    <article class="service-card">
+
+                        <div class="service-card-top">
+                            <div class="service-icon">
+                                <i class="ri-cloud-line"></i>
+                            </div>
+                            <span class="service-number">06</span>
+                        </div>
+
+                        <h3>Cloud &amp; Server Management</h3>
+
+                        <p>
+                            Supporting deployment and hosting workflows with
+                            attention to reliability, performance, security,
+                            and ongoing maintenance.
+                        </p>
+
+                        <div class="service-tags">
+                            <span>Deployment</span>
+                            <span>Hosting</span>
+                            <span>Maintenance</span>
+                        </div>
+
+                        <div class="service-card-footer">
+                            <span>CLOUD / INFRASTRUCTURE</span>
+                            <i class="ri-arrow-right-up-line"></i>
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <!-- Section Closing -->
+                <div class="services-footer">
+                    <span class="java">}</span>
+                    <span>// Turning technology into possibilities.</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="skills-section" id="Skills">
+
+            <div class="skills-container">
+
+                <!-- SECTION HEADER -->
+                <header class="skills-header">
+
+                    <p class="skills-label">04 / TECHNICAL EXPERTISE</p>
+
+                    <div class="skills-code">
+                        <span class="java">public class</span>
+                        <span class="normal"> Skills </span>
+                        <span class="java">extends</span>
+                        <span class="normal"> Knowledge </span>
+                        <span class="java">{</span>
+                    </div>
+
+                    <div class="skills-heading-row">
+                        <div>
+                            <h2>
+                                My <span>Skills.</span>
+                            </h2>
+
+                            <p class="skills-description">
+                                A comprehensive overview of my technical expertise,
+                                tools, and professional experience.
+                            </p>
+                        </div>
+
+                        <span class="skills-count">SKILLSET — 02 CATEGORIES</span>
+                    </div>
+
+                </header>
+
+
+                <!-- ================= CORE COMPETENCIES ================= -->
+
+                <div class="competencies-section">
+
+                    <div class="skills-subheading">
+                        <div>
+                            <span class="skills-index">01</span>
+                            <h3>Core Competencies</h3>
+                        </div>
+
+                        <p>My areas of technical focus</p>
+                    </div>
+
+                    <div class="competencies-grid">
+
+                        <!-- 01 Web Development -->
+                        <article class="competency-card">
+                            <div class="competency-top">
+                                <i class="ri-code-s-slash-line"></i>
+                                <span>01</span>
+                            </div>
+
+                            <div class="skill-circle" style="--skill: 95%;">
+                                <svg viewBox="0 0 100 100" aria-hidden="true">
+                                    <circle class="circle-track"
+                                        cx="50" cy="50" r="42"/>
+                                    <circle class="circle-progress"
+                                        cx="50" cy="50" r="42"
+                                        pathLength="100"
+                                        stroke-dasharray="100"
+                                        stroke-dashoffset="5"/>
+                                </svg>
+                                <div class="circle-value">
+                                    <strong>95%</strong>
+                                </div>
+                            </div>
+
+                            <h4>Web Development</h4>
+                            <p>Responsive websites and web applications</p>
+                        </article>
+
+
+                        <!-- 02 Mobile Application Development -->
+                        <article class="competency-card">
+                            <div class="competency-top">
+                                <i class="ri-smartphone-line"></i>
+                                <span>02</span>
+                            </div>
+
+                            <div class="skill-circle" style="--skill: 85%;">
+                                <svg viewBox="0 0 100 100" aria-hidden="true">
+                                    <circle class="circle-track"
+                                        cx="50" cy="50" r="42"/>
+                                    <circle class="circle-progress"
+                                        cx="50" cy="50" r="42"
+                                        pathLength="100"
+                                        stroke-dasharray="100"
+                                        stroke-dashoffset="15"/>
+                                </svg>
+                                <div class="circle-value">
+                                    <strong>85%</strong>
+                                </div>
+                            </div>
+
+                            <h4>Mobile Application Development</h4>
+                            <p>Mobile interfaces and application logic</p>
+                        </article>
+
+
+                        <!-- 03 Game Development -->
+                        <article class="competency-card">
+                            <div class="competency-top">
+                                <i class="ri-gamepad-line"></i>
+                                <span>03</span>
+                            </div>
+
+                            <div class="skill-circle" style="--skill: 90%;">
+                                <svg viewBox="0 0 100 100" aria-hidden="true">
+                                    <circle class="circle-track"
+                                        cx="50" cy="50" r="42"/>
+                                    <circle class="circle-progress"
+                                        cx="50" cy="50" r="42"
+                                        pathLength="100"
+                                        stroke-dasharray="100"
+                                        stroke-dashoffset="10"/>
+                                </svg>
+                                <div class="circle-value">
+                                    <strong>90%</strong>
+                                </div>
+                            </div>
+
+                            <h4>Game Development</h4>
+                            <p>Gameplay concepts and interactive experiences</p>
+                        </article>
+
+
+                        <!-- 04 3D Environment Design -->
+                        <article class="competency-card">
+                            <div class="competency-top">
+                                <i class="ri-landscape-line"></i>
+                                <span>04</span>
+                            </div>
+
+                            <div class="skill-circle" style="--skill: 85%;">
+                                <svg viewBox="0 0 100 100" aria-hidden="true">
+                                    <circle class="circle-track"
+                                        cx="50" cy="50" r="42"/>
+                                    <circle class="circle-progress"
+                                        cx="50" cy="50" r="42"
+                                        pathLength="100"
+                                        stroke-dasharray="100"
+                                        stroke-dashoffset="15"/>
+                                </svg>
+                                <div class="circle-value">
+                                    <strong>85%</strong>
+                                </div>
+                            </div>
+
+                            <h4>3D Environment Design</h4>
+                            <p>Creating immersive digital environments</p>
+                        </article>
+
+
+                        <!-- 05 Programming -->
+                        <article class="competency-card">
+                            <div class="competency-top">
+                                <i class="ri-terminal-box-line"></i>
+                                <span>05</span>
+                            </div>
+
+                            <div class="skill-circle" style="--skill: 92%;">
+                                <svg viewBox="0 0 100 100" aria-hidden="true">
+                                    <circle class="circle-track"
+                                        cx="50" cy="50" r="42"/>
+                                    <circle class="circle-progress"
+                                        cx="50" cy="50" r="42"
+                                        pathLength="100"
+                                        stroke-dasharray="100"
+                                        stroke-dashoffset="8"/>
+                                </svg>
+                                <div class="circle-value">
+                                    <strong>92%</strong>
+                                </div>
+                            </div>
+
+                            <h4>Programming</h4>
+                            <p>Problem-solving and application logic</p>
+                        </article>
+
+
+                        <!-- 06 3D Modeling -->
+                        <article class="competency-card">
+                            <div class="competency-top">
+                                <i class="ri-box-3-line"></i>
+                                <span>06</span>
+                            </div>
+
+                            <div class="skill-circle" style="--skill: 50%;">
+                                <svg viewBox="0 0 100 100" aria-hidden="true">
+                                    <circle class="circle-track"
+                                        cx="50" cy="50" r="42"/>
+                                    <circle class="circle-progress"
+                                        cx="50" cy="50" r="42"
+                                        pathLength="100"
+                                        stroke-dasharray="100"
+                                        stroke-dashoffset="50"/>
+                                </svg>
+                                <div class="circle-value">
+                                    <strong>50%</strong>
+                                </div>
+                            </div>
+
+                            <h4>3D Modeling</h4>
+                            <p>3D assets and digital modeling</p>
+                        </article>
+
+
+                        <!-- 07 UI/UX Design -->
+                        <article class="competency-card">
+                            <div class="competency-top">
+                                <i class="ri-layout-masonry-line"></i>
+                                <span>07</span>
+                            </div>
+
+                            <div class="skill-circle" style="--skill: 85%;">
+                                <svg viewBox="0 0 100 100" aria-hidden="true">
+                                    <circle class="circle-track"
+                                        cx="50" cy="50" r="42"/>
+                                    <circle class="circle-progress"
+                                        cx="50" cy="50" r="42"
+                                        pathLength="100"
+                                        stroke-dasharray="100"
+                                        stroke-dashoffset="15"/>
+                                </svg>
+                                <div class="circle-value">
+                                    <strong>85%</strong>
+                                </div>
+                            </div>
+
+                            <h4>UI/UX Design</h4>
+                            <p>Intuitive interfaces and user experiences</p>
+                        </article>
+
+
+                        <!-- 08 Server Management -->
+                        <article class="competency-card">
+                            <div class="competency-top">
+                                <i class="ri-server-line"></i>
+                                <span>08</span>
+                            </div>
+
+                            <div class="skill-circle" style="--skill: 88%;">
+                                <svg viewBox="0 0 100 100" aria-hidden="true">
+                                    <circle class="circle-track"
+                                        cx="50" cy="50" r="42"/>
+                                    <circle class="circle-progress"
+                                        cx="50" cy="50" r="42"
+                                        pathLength="100"
+                                        stroke-dasharray="100"
+                                        stroke-dashoffset="12"/>
+                                </svg>
+                                <div class="circle-value">
+                                    <strong>88%</strong>
+                                </div>
+                            </div>
+
+                            <h4>Server Management</h4>
+                            <p>Deployment, hosting, and server configuration</p>
+                        </article>
+
+                    </div>
+                </div>
+
+
+                <!-- ================= PROGRAMMING LANGUAGES & FRAMEWORKS ================= -->
+
+                <div class="technical-skills-section">
+
+                    <div class="skills-subheading">
+                        <div>
+                            <span class="skills-index">02</span>
+                            <h3>Programming Languages &amp; Frameworks</h3>
+                        </div>
+
+                        <p>Technologies &amp; tools</p>
+                    </div>
+
+
+                    <div class="technical-skills-grid">
+
+                        <!-- LEFT COLUMN -->
+                        <div class="technical-column">
+
+                            <div class="technical-column-heading">
+                                <i class="ri-code-box-line"></i>
+                                <h4>Languages &amp; Frameworks</h4>
+                            </div>
+
+                            <!-- HTML / CSS / JS -->
+                            <div class="tech-skill" style="--level: 95%;">
+                                <div class="tech-skill-info">
+                                    <span>HTML / CSS / JavaScript</span>
+                                    <strong>95%</strong>
+                                </div>
+                                <div class="tech-progress">
+                                    <span></span>
+                                </div>
+                            </div>
+
+                            <!-- Python -->
+                            <div class="tech-skill" style="--level: 75%;">
+                                <div class="tech-skill-info">
+                                    <span>Python</span>
+                                    <strong>75%</strong>
+                                </div>
+                                <div class="tech-progress"><span></span></div>
+                            </div>
+
+                            <!-- Java -->
+                            <div class="tech-skill" style="--level: 80%;">
+                                <div class="tech-skill-info">
+                                    <span>Java</span>
+                                    <strong>80%</strong>
+                                </div>
+                                <div class="tech-progress"><span></span></div>
+                            </div>
+
+                            <!-- C++ -->
+                            <div class="tech-skill" style="--level: 70%;">
+                                <div class="tech-skill-info">
+                                    <span>C++</span>
+                                    <strong>70%</strong>
+                                </div>
+                                <div class="tech-progress"><span></span></div>
+                            </div>
+
+                            <!-- C -->
+                            <div class="tech-skill" style="--level: 75%;">
+                                <div class="tech-skill-info">
+                                    <span>C</span>
+                                    <strong>75%</strong>
+                                </div>
+                                <div class="tech-progress"><span></span></div>
+                            </div>
+
+                            <!-- C# -->
+                            <div class="tech-skill" style="--level: 70%;">
+                                <div class="tech-skill-info">
+                                    <span>C#</span>
+                                    <strong>70%</strong>
+                                </div>
+                                <div class="tech-progress"><span></span></div>
+                            </div>
+
+                            <!-- Node.js -->
+                            <div class="tech-skill" style="--level: 75%;">
+                                <div class="tech-skill-info">
+                                    <span>Node.js</span>
+                                    <strong>75%</strong>
+                                </div>
+                                <div class="tech-progress"><span></span></div>
+                            </div>
+
+                            <!-- React -->
+                            <div class="tech-skill" style="--level: 70%;">
+                                <div class="tech-skill-info">
+                                    <span>React</span>
+                                    <strong>70%</strong>
+                                </div>
+                                <div class="tech-progress"><span></span></div>
+                            </div>
+
+                        </div>
+
+
+                        <!-- RIGHT COLUMN -->
+                        <div class="technical-column">
+
+                            <div class="technical-column-heading">
+                                <i class="ri-database-2-line"></i>
+                                <h4>Platforms, Data &amp; Tools</h4>
+                            </div>
+
+                            <!-- .NET -->
+                            <div class="tech-skill" style="--level: 70%;">
+                                <div class="tech-skill-info">
+                                    <span>.NET</span>
+                                    <strong>70%</strong>
+                                </div>
+                                <div class="tech-progress"><span></span></div>
+                            </div>
+
+                            <!-- PHP -->
+                            <div class="tech-skill" style="--level: 85%;">
+                                <div class="tech-skill-info">
+                                    <span>PHP</span>
+                                    <strong>85%</strong>
+                                </div>
+                                <div class="tech-progress"><span></span></div>
+                            </div>
+
+                            <!-- MySQL -->
+                            <div class="tech-skill" style="--level: 85%;">
+                                <div class="tech-skill-info">
+                                    <span>MySQL</span>
+                                    <strong>85%</strong>
+                                </div>
+                                <div class="tech-progress"><span></span></div>
+                            </div>
+
+                            <!-- SQLite -->
+                            <div class="tech-skill" style="--level: 70%;">
+                                <div class="tech-skill-info">
+                                    <span>SQLite</span>
+                                    <strong>70%</strong>
+                                </div>
+                                <div class="tech-progress"><span></span></div>
+                            </div>
+
+                            <!-- Claude -->
+                            <div class="tech-skill" style="--level: 80%;">
+                                <div class="tech-skill-info">
+                                    <span>Claude / AI Tools</span>
+                                    <strong>80%</strong>
+                                </div>
+                                <div class="tech-progress"><span></span></div>
+                            </div>
+
+                            <!-- Figma -->
+                            <div class="tech-skill" style="--level: 82%;">
+                                <div class="tech-skill-info">
+                                    <span>Figma</span>
+                                    <strong>82%</strong>
+                                </div>
+                                <div class="tech-progress"><span></span></div>
+                            </div>
+
+                            <!-- Blender -->
+                            <div class="tech-skill" style="--level: 80%;">
+                                <div class="tech-skill-info">
+                                    <span>Blender</span>
+                                    <strong>80%</strong>
+                                </div>
+                                <div class="tech-progress"><span></span></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- SECTION FOOTER -->
+                <div class="skills-footer">
+                    <span class="java">}</span>
+                    <span>// Always learning. Always building.</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="contact-section" id="contact">
+
+            <div class="contact-container">
+
+                <!-- SECTION HEADER -->
+                <header class="contact-header">
+
+                    <p class="contact-label">06 / GET IN TOUCH</p>
+
+                    <div class="contact-code">
+                        <span class="java">public class</span>
+                        <span class="normal"> Contact </span>
+                        <span class="java">extends</span>
+                        <span class="normal"> Connection </span>
+                        <span class="java">{</span>
+                    </div>
+
+                    <div class="contact-heading-row">
+                        <div>
+                            <h2>
+                                Let's Build
+                                <span>Something Great.</span>
+                            </h2>
+
+                            <p class="contact-description">
+                                Have a project in mind, an exciting opportunity,
+                                or simply want to connect? I'd love to hear from you.
+                                Let's turn your ideas into something meaningful.
+                            </p>
+                        </div>
+
+                        <div class="contact-status">
+                            <span class="status-dot"></span>
+                            OPEN TO OPPORTUNITIES
+                        </div>
+                    </div>
+
+                </header>
+
+
+                <!-- CONTACT CONTENT -->
+                <div class="contact-layout">
+
+                    <!-- LEFT: CONTACT INFORMATION -->
+                    <div class="contact-info-panel">
+
+                        <div class="contact-panel-heading">
+                            <span class="contact-index">01 / CONNECT</span>
+                            <i class="ri-send-plane-line"></i>
+                        </div>
+
+                        <h3>Let's start a conversation.</h3>
+
+                        <p class="contact-info-description">
+                            Whether it's web development, software engineering,
+                            UI/UX design, or a creative collaboration, feel free
+                            to reach out.
+                        </p>
+
+
+                        <!-- EMAIL -->
+                        <a class="contact-detail"
+                        href="mailto:YOUR_EMAIL@example.com">
+
+                            <span class="contact-detail-icon">
+                                <i class="ri-mail-line"></i>
+                            </span>
+
+                            <span class="contact-detail-text">
+                                <small>EMAIL ME</small>
+                                <strong>sadevpahasara49@gmail.com</strong>
+                            </span>
+
+                            <i class="ri-arrow-up-right-line contact-arrow"></i>
+                        </a>
+
+
+                        <!-- LOCATION -->
+                        <div class="contact-detail">
+
+                            <span class="contact-detail-icon">
+                                <i class="ri-map-pin-line"></i>
+                            </span>
+
+                            <span class="contact-detail-text">
+                                <small>LOCATION</small>
+                                <strong>Sri Lanka</strong>
+                            </span>
+
+                            <i class="ri-global-line contact-arrow"></i>
+                        </div>
+
+
+                        <!-- AVAILABILITY -->
+                        <div class="contact-detail">
+
+                            <span class="contact-detail-icon">
+                                <i class="ri-time-line"></i>
+                            </span>
+
+                            <span class="contact-detail-text">
+                                <small>AVAILABILITY</small>
+                                <strong>Open to opportunities</strong>
+                            </span>
+
+                            <i class="ri-check-line contact-arrow"></i>
+                        </div>
+
+
+                        <!-- SOCIAL LINKS -->
+                        <div class="contact-socials">
+
+                            <p>FIND ME ON</p>
+
+                            <div class="contact-social-links">
+
+                                <a href="https://github.com/Sadev-Pahasara"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="GitHub">
+                                    <i class="ri-github-line"></i>
+                                </a>
+
+                                <a href="https://www.linkedin.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="LinkedIn">
+                                    <i class="ri-linkedin-line"></i>
+                                </a>
+
+                                <a href="https://www.instagram.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Instagram">
+                                    <i class="ri-instagram-line"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- RIGHT: CONTACT FORM -->
+                    <div class="contact-form-panel">
+
+                        <div class="contact-form-heading">
+                            <div>
+                                <span class="contact-index">02 / SEND A MESSAGE</span>
+                                <h3>Tell me about your project.</h3>
+                            </div>
+
+                            <i class="ri-message-3-line form-heading-icon"></i>
+                        </div>
+
+
+                        <form class="contact-form"
+                            id="contactForm"
+                            action="mailto:sadevpahasara49@gmail.com"
+                            method="post"
+                            enctype="text/plain">
+
+                            <div class="contact-form-row">
+
+                                <div class="contact-field">
+                                    <label for="contactName">Your Name</label>
+
+                                    <input
+                                        type="text"
+                                        id="contactName"
+                                        name="Name"
+                                        placeholder="John Doe"
+                                        autocomplete="name"
+                                        required
+                                    >
+                                </div>
+
+                                <div class="contact-field">
+                                    <label for="contactEmail">Email Address</label>
+
+                                    <input
+                                        type="email"
+                                        id="contactEmail"
+                                        name="Email"
+                                        placeholder="abcd@example.com"
+                                        autocomplete="email"
+                                        required
+                                    >
+                                </div>
+
+                            </div>
+
+
+                            <div class="contact-field">
+                                <label for="contactSubject">Subject</label>
+
+                                <input
+                                    type="text"
+                                    id="contactSubject"
+                                    name="Subject"
+                                    placeholder="What would you like to discuss?"
+                                    required
+                                >
+                            </div>
+
+
+                            <div class="contact-field">
+                                <label for="contactMessage">Your Message</label>
+
+                                <textarea
+                                    id="contactMessage"
+                                    name="Message"
+                                    rows="5"
+                                    placeholder="Tell me a little about your project..."
+                                    required
+                                ></textarea>
+                            </div>
+
+
+                            <button type="submit" class="contact-submit-btn">
+
+                                <span>Send Message</span>
+
+                                <i class="ri-arrow-right-up-line"></i>
+
+                            </button>
+
+                            <p class="contact-form-note">
+                                <i class="ri-lock-line"></i>
+                                Your information will only be used to respond
+                                to your message.
+                            </p>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CONTACT FOOTER -->
+                <footer class="contact-footer">
+
+                    <div class="contact-footer-code">
+                        <span class="java">}</span>
+                        <span>// Every great project starts with a conversation.</span>
+                    </div>
+
+                    <div class="contact-footer-code">
+                        <span> Copyright © 2026 All rights reserved | This site is made with 🤍 by Sadev Pahasara</span>
+                    </div>
+
+                    <a href="#top" class="contact-back-top">
+                        BACK TO TOP
+                        <i class="ri-arrow-up-line"></i>
+                    </a>
+
+                </footer>
+
+            </div>
+
+        </section>
 
     </section>
+
+    <script src="script.js"></script>
 
 </body>
 

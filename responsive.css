@@ -1,3 +1,151 @@
+
+@media (max-width: 1770px) {
+    .nav {
+        left: 80%;
+    }
+
+}
+
+@media (max-width: 1670px) {
+    .nav {
+        left: 78%;
+    }
+
+}
+
+@media (max-width: 1570px) {
+    .nav {
+        left: 78%;
+    }
+
+}
+
+@media (max-width: 1400px) {
+    .nav {
+        left: 74%;
+    }
+
+}
+
+@media (max-width: 850px) {
+    .nav {
+        left: -30%;
+        top: 12px;
+        width: calc(100% - 24px);
+        min-height: 58px;
+        padding: 8px 16px;
+        gap: 12px;
+    }
+
+    .nav-logo{
+    display: none;
+    }
+
+    .nav-logo2 {
+        font-size: 1.35rem;
+        display: block;
+        color: #BA6F2E;
+        text-decoration: none;
+        font-weight: 800;
+        letter-spacing: 1px;
+        white-space: nowrap;
+        transition: color 0.3s ease;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: calc(100% + 10px);
+        left: 0;
+        right: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+
+        padding: 10px;
+        background: rgba(12, 12, 12, 0.96);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+
+        border: 1px solid rgba(186, 111, 46, 0.25);
+        border-radius: 14px;
+
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-8px);
+
+        transition: opacity 0.25s ease,
+                    transform 0.25s ease,
+                    visibility 0.25s ease;
+    }
+
+    .nav-menu.active {
+        visibility: visible;
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+
+    .nav-menu ul {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
+
+    .nav-menu ul + ul {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        margin-top: 4px;
+        padding-top: 4px;
+    }
+
+    .nav-menu ul li a {
+        display: block;
+        width: 100%;
+        padding: 13px 12px;
+        font-size: 0.9rem;
+    }
+
+    .nav-menu ul li a::after {
+        bottom: 5px;
+        left: 12px;
+    }
+}
+
+/* Small mobile screens */
+
+@media (max-width: 380px) {
+    .nav {
+        width: calc(100% - 20px);
+        padding: 8px 12px;
+    }
+
+    .nav-logo {
+        font-size: 1.2rem;
+    }
+}
+
+/* Respect reduced-motion preferences */
+
+@media (prefers-reduced-motion: reduce) {
+    .nav,
+    .nav-logo,
+    .nav-menu,
+    .nav-menu ul li a,
+    .nav-menu ul li a::after,
+    .menu-toggle span {
+        transition: none;
+    }
+}
+
+
+
 @media (max-width: 768px) {
     .top2 {
         padding: 8px;
@@ -37,5 +185,987 @@
     .editor-status {
         gap: 10px;
         flex-wrap: wrap;
+    }
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 900px) {
+
+    .nav {
+        left: 50%;
+    }
+
+    .about-section {
+        padding: 90px 6%;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .about-header {
+        margin-bottom: 45px;
+    }
+
+    .about-highlights {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    .about-card {
+        grid-template-columns: 42px minmax(0, 1fr);
+        gap: 13px;
+        padding: 18px;
+    }
+
+    .about-card-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .about-card-number {
+        display: none;
+    }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+    .about-section {
+        padding: 70px 6%;
+    }
+
+    .about-label {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    .about-code {
+        margin-bottom: 24px;
+        font-size: 12px;
+    }
+
+    .about-header h2 {
+        font-size: clamp(30px, 9vw, 42px);
+        letter-spacing: -1px;
+    }
+
+    .about-subtitle {
+        font-size: 13px;
+    }
+
+    .about-content {
+        gap: 35px;
+    }
+
+    .about-text h3 {
+        font-size: 25px;
+    }
+
+    .about-description {
+        font-size: 13px;
+        line-height: 1.85;
+    }
+
+    .about-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .about-btn {
+        width: 100%;
+    }
+
+    .about-highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .about-card {
+        grid-template-columns: 44px minmax(0, 1fr) auto;
+        padding: 18px;
+    }
+
+    .about-card-number {
+        display: block;
+    }
+
+    .about-code-footer {
+        margin-top: 35px;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .about-code-comment {
+        font-size: 10px;
+    }
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 360px) {
+    .about-section {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    .about-card {
+        grid-template-columns: 38px minmax(0, 1fr);
+        gap: 12px;
+        padding: 14px;
+    }
+
+    .about-card-icon {
+        width: 38px;
+        height: 38px;
+    }
+
+    .about-card-number {
+        display: none;
+    }
+
+    .about-card h4 {
+        font-size: 14px;
+    }
+
+    .about-card p {
+        font-size: 11px;
+    }
+}
+
+
+/* ================= TABLETS ================= */
+
+@media (max-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+        max-width: 650px;
+    }
+
+    .dom {
+        min-height: 140px;
+        padding: 20px 12px;
+    }
+
+    .dom span {
+        font-size: clamp(2rem, 5vw, 2.7rem);
+    }
+
+    .dom h2 {
+        font-size: 1rem;
+    }
+}
+
+/* ================= MOBILE PHONES ================= */
+
+@media (max-width: 480px) {
+    .cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        padding: 0 12px;
+        margin-top: 25px;
+    }
+
+    .dom {
+        min-height: 120px;
+        padding: 16px 8px;
+        border-width: 2px;
+        border-radius: 12px;
+    }
+
+    .dom span {
+        font-size: clamp(1.7rem, 8vw, 2.3rem);
+        margin-bottom: 8px;
+    }
+
+    .dom h2 {
+        font-size: clamp(0.75rem, 3.5vw, 0.95rem);
+        line-height: 1.35;
+    }
+
+    .dom:hover {
+        transform: translateY(-3px);
+    }
+}
+
+/* ================= VERY SMALL PHONES ================= */
+
+@media (max-width: 340px) {
+    .cards {
+        gap: 8px;
+        padding: 0 8px;
+    }
+
+    .dom {
+        min-height: 105px;
+        padding: 12px 5px;
+    }
+
+    .dom span {
+        font-size: 1.6rem;
+    }
+
+    .dom h2 {
+        font-size: 0.72rem;
+    }
+}
+
+/* ================= TOUCH DEVICES ================= */
+
+@media (hover: none) {
+    .dom:hover {
+        transform: none;
+    }
+}
+
+/* ================= TABLETS ================= */
+
+@media (max-width: 900px) {
+    .projects-section {
+        padding: 85px 5%;
+    }
+
+    .projects-heading-row {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .projects-count {
+        padding-bottom: 0;
+    }
+
+    .projects-grid {
+        gap: 30px 18px;
+    }
+
+    .project-info {
+        padding: 20px;
+    }
+
+    .project-info > p {
+        min-height: 100px;
+    }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+    .projects-section {
+        padding: 70px 5%;
+    }
+
+    .projects-header {
+        margin-bottom: 35px;
+    }
+
+    .projects-label {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    .projects-code {
+        margin-bottom: 22px;
+        font-size: 12px;
+    }
+
+    .projects-heading-row h2 {
+        font-size: clamp(34px, 9vw, 48px);
+        letter-spacing: -1px;
+    }
+
+    .projects-description {
+        margin-top: 15px;
+        font-size: 13px;
+    }
+
+    .projects-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 28px;
+    }
+
+    .project-preview {
+        aspect-ratio: 16 / 10;
+    }
+
+    .project-info {
+        padding: 20px;
+    }
+
+    .project-info h3 {
+        font-size: 24px;
+    }
+
+    .project-info > p {
+        min-height: 0;
+        font-size: 13px;
+    }
+
+    .project-meta {
+        font-size: 9px;
+    }
+
+    .project-tags span {
+        font-size: 9px;
+    }
+
+    .projects-footer {
+        margin-top: 35px;
+        gap: 12px;
+        font-size: 11px;
+    }
+}
+
+/* ================= SMALL PHONES ================= */
+
+@media (max-width: 360px) {
+    .projects-section {
+        padding-right: 4%;
+        padding-left: 4%;
+    }
+
+    .project-info {
+        padding: 16px;
+    }
+
+    .project-preview-label {
+        top: 12px;
+        left: 12px;
+        font-size: 8px;
+    }
+
+    .project-open {
+        right: 12px;
+        bottom: 12px;
+        width: 36px;
+        height: 36px;
+    }
+
+    .project-bottom {
+        align-items: flex-start;
+    }
+
+    .project-tags {
+        gap: 5px;
+    }
+
+    .project-tags span {
+        padding: 6px;
+        font-size: 9px;
+    }
+}
+
+/* ================= REDUCED MOTION ================= */
+
+@media (prefers-reduced-motion: reduce) {
+    .project-card,
+    .project-preview img,
+    .project-preview video,
+    .project-open,
+    .project-link {
+        transition: none;
+    }
+
+    .project-card:hover {
+        transform: none;
+    }
+
+    .project-card:hover .project-preview img,
+    .project-card:hover .project-preview video {
+        transform: none;
+    }
+}
+
+/* ================= LAPTOPS ================= */
+
+@media (max-width: 1100px) {
+
+    .nav {
+        left: 68%;
+    }
+
+    .services-section {
+        padding: 90px 5%;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .services-section .service-card {
+        min-height: 320px;
+        padding: 23px;
+    }
+
+    .services-section .service-card h3 {
+        font-size: 21px;
+    }
+}
+
+/* ================= TABLETS ================= */
+
+@media (max-width: 768px) {
+    .services-section {
+        padding: 75px 5%;
+    }
+
+    .services-header {
+        margin-bottom: 38px;
+    }
+
+    .services-heading-row {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .services-heading-row h2 {
+        font-size: clamp(34px, 6vw, 48px);
+        letter-spacing: -1px;
+    }
+
+    .services-description {
+        font-size: 13px;
+    }
+
+    .services-count {
+        padding-bottom: 0;
+    }
+
+    .services-section .service-card {
+        min-height: 320px;
+        padding: 20px;
+    }
+
+    .service-card-top {
+        margin-bottom: 22px;
+    }
+}
+
+/* ================= MOBILE PHONES ================= */
+
+@media (max-width: 520px) {
+    .services-section {
+        padding: 65px 5%;
+    }
+
+    .services-label {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    .services-code {
+        margin-bottom: 23px;
+        font-size: 12px;
+    }
+
+    .services-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 16px;
+    }
+
+    .services-section .service-card {
+        min-height: auto;
+        padding: 23px;
+    }
+
+    .service-card-top {
+        margin-bottom: 22px;
+    }
+
+    .services-section .service-card h3 {
+        font-size: 22px;
+    }
+
+    .services-section .service-card > p {
+        font-size: 13px;
+        line-height: 1.85;
+    }
+
+    .service-tags {
+        margin-top: 0;
+        padding-bottom: 20px;
+    }
+
+    .services-footer {
+        margin-top: 35px;
+        gap: 12px;
+        font-size: 11px;
+    }
+}
+
+/* ================= SMALL PHONES ================= */
+
+@media (max-width: 360px) {
+    .services-section {
+        padding-right: 4%;
+        padding-left: 4%;
+    }
+
+    .services-section .service-card {
+        padding: 18px;
+    }
+
+    .service-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .service-icon i {
+        font-size: 22px;
+    }
+
+    .service-tags span {
+        font-size: 9px;
+    }
+
+    .service-card-footer {
+        font-size: 8px;
+    }
+}
+
+/* ================= ACCESSIBILITY ================= */
+
+@media (prefers-reduced-motion: reduce) {
+    .services-section .service-card,
+    .services-section .service-card::before,
+    .service-icon,
+    .service-card-footer i {
+        transition: none;
+    }
+
+    .services-section .service-card:hover {
+        transform: none;
+    }
+}
+
+
+/* =========================================================
+   LAPTOPS
+========================================================= */
+
+@media (max-width: 1100px) {
+    .skills-section {
+        padding: 90px 5%;
+    }
+
+    .competencies-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .competency-card {
+        padding: 22px 15px;
+    }
+
+    .skill-circle {
+        width: 110px;
+    }
+
+    .technical-column {
+        padding: 23px;
+    }
+}
+
+/* =========================================================
+   TABLETS
+========================================================= */
+
+@media (max-width: 768px) {
+    .skills-section {
+        padding: 75px 5%;
+    }
+
+    .skills-header {
+        margin-bottom: 45px;
+    }
+
+    .skills-heading-row {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .skills-heading-row h2 {
+        font-size: clamp(38px, 7vw, 55px);
+        letter-spacing: -1px;
+    }
+
+    .skills-count {
+        padding-bottom: 0;
+    }
+
+    .competencies-section,
+    .technical-skills-section {
+        margin-top: 48px;
+    }
+
+    .competencies-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    .competency-card {
+        padding: 22px 16px;
+    }
+
+    .skill-circle {
+        width: 110px;
+    }
+
+    .technical-skills-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 18px;
+    }
+
+    .skills-subheading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .skills-subheading > p {
+        text-align: left;
+    }
+}
+
+/* =========================================================
+   MOBILE PHONES
+========================================================= */
+
+@media (max-width: 480px) {
+    .skills-section {
+        padding: 60px 5%;
+    }
+
+    .skills-label {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    .skills-code {
+        margin-bottom: 23px;
+        font-size: 12px;
+    }
+
+    .skills-heading-row h2 {
+        font-size: clamp(35px, 9vw, 45px);
+    }
+
+    .skills-description {
+        margin-top: 15px;
+        font-size: 13px;
+    }
+
+    .skills-subheading h3 {
+        font-size: 21px;
+    }
+
+    .competencies-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 11px;
+    }
+
+    .competency-card {
+        padding: 17px 11px;
+        border-radius: 8px;
+    }
+
+    .competency-top {
+        margin-bottom: 18px;
+    }
+
+    .competency-top i {
+        font-size: 20px;
+    }
+
+    .skill-circle {
+        width: min(100%, 100px);
+        margin-bottom: 17px;
+    }
+
+    .circle-value strong {
+        font-size: 21px;
+    }
+
+    .competency-card h4 {
+        font-size: 14px;
+    }
+
+    .competency-card > p {
+        font-size: 11px;
+    }
+
+    .technical-column {
+        padding: 19px 16px;
+    }
+
+    .technical-column-heading h4 {
+        font-size: 15px;
+    }
+
+    .tech-skill-info {
+        font-size: 12px;
+    }
+
+    .skills-footer {
+        margin-top: 35px;
+        gap: 12px;
+        font-size: 11px;
+    }
+}
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media (max-width: 340px) {
+    .skills-section {
+        padding-right: 4%;
+        padding-left: 4%;
+    }
+
+    .competencies-grid {
+        gap: 8px;
+    }
+
+    .competency-card {
+        padding: 14px 8px;
+    }
+
+    .skill-circle {
+        width: 85px;
+    }
+
+    .circle-value strong {
+        font-size: 18px;
+    }
+
+    .competency-card h4 {
+        font-size: 13px;
+    }
+
+    .competency-card > p {
+        font-size: 10px;
+    }
+
+    .technical-column {
+        padding: 15px 12px;
+    }
+}
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+    .competency-card,
+    .circle-progress {
+        transition: none;
+    }
+
+    .tech-progress span {
+        animation: none;
+        transform: scaleX(1);
+    }
+
+    .competency-card:hover {
+        transform: none;
+    }
+}
+
+
+/* =========================================================
+   TABLETS AND SMALL LAPTOPS
+========================================================= */
+
+@media (max-width: 1000px) {
+    .contact-section {
+        padding: 85px 5%;
+    }
+
+    .contact-layout {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+    }
+
+    .contact-info-panel,
+    .contact-form-panel {
+        padding: 28px;
+    }
+
+    .contact-heading-row {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-status {
+        align-self: flex-start;
+    }
+
+    .contact-heading-row h2 {
+        font-size: clamp(38px, 6vw, 60px);
+    }
+}
+
+/* =========================================================
+   MOBILE PHONES
+========================================================= */
+
+@media (max-width: 600px) {
+    .contact-section {
+        padding: 65px 5%;
+    }
+
+    .contact-header {
+        margin-bottom: 38px;
+    }
+
+    .contact-label {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    .contact-code {
+        margin-bottom: 23px;
+        font-size: 12px;
+    }
+
+    .contact-heading-row h2 {
+        font-size: clamp(34px, 9vw, 48px);
+        letter-spacing: -1px;
+    }
+
+    .contact-description {
+        margin-top: 17px;
+        font-size: 13px;
+    }
+
+    .contact-status {
+        max-width: 100%;
+        font-size: 9px;
+    }
+
+    .contact-info-panel,
+    .contact-form-panel {
+        padding: 22px 18px;
+    }
+
+    .contact-panel-heading {
+        margin-bottom: 25px;
+    }
+
+    .contact-info-panel > h3 {
+        font-size: 25px;
+    }
+
+    .contact-detail {
+        gap: 10px;
+        padding: 12px 9px;
+    }
+
+    .contact-detail-icon {
+        width: 38px;
+        height: 38px;
+    }
+
+    .contact-detail-text strong {
+        font-size: 11px;
+    }
+
+    .contact-form-heading {
+        align-items: flex-start;
+        margin-bottom: 24px;
+    }
+
+    .contact-form-heading h3 {
+        font-size: 21px;
+    }
+
+    .contact-form-row {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+    }
+
+    .contact-form {
+        gap: 21px;
+    }
+
+    .contact-field input {
+        min-height: 47px;
+    }
+
+    .contact-field textarea {
+        min-height: 130px;
+    }
+
+    .contact-footer {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 18px;
+        margin-top: 35px;
+    }
+
+    .contact-footer-code {
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 11px;
+    }
+}
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media (max-width: 350px) {
+    .contact-section {
+        padding-right: 4%;
+        padding-left: 4%;
+    }
+
+    .contact-info-panel,
+    .contact-form-panel {
+        padding: 18px 13px;
+    }
+
+    .contact-heading-row h2 {
+        font-size: 33px;
+    }
+
+    .contact-detail-text strong {
+        font-size: 10px;
+    }
+
+    .contact-social-links {
+        gap: 9px;
+    }
+
+    .contact-social-links a {
+        width: 39px;
+        height: 39px;
+    }
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+    .contact-detail,
+    .contact-social-links a,
+    .contact-submit-btn,
+    .contact-submit-btn i,
+    .contact-back-top {
+        transition: none;
+    }
+
+    .contact-social-links a:hover,
+    .contact-submit-btn:hover {
+        transform: none;
     }
 }
