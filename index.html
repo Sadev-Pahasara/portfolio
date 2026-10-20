@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sadev-Pahasara</title>
+    <script>
+        document.documentElement.classList.add("has-preloader");
+    </script>
 
     <!-- css -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="preloader.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
     <link rel="shortcut icon" href="SRC/bh.png" type="image/x-icon">
 
@@ -17,6 +21,16 @@
 
 </head>
 <body>
+
+    <div class="page-preloader" id="pagePreloader" role="status" aria-label="Loading Sadev Pahasara portfolio">
+        <span class="preloader-name" id="preloaderName" aria-hidden="true"></span>
+        <div class="preloader-curtains" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
 
     <video class="bg-video" autoplay muted loop playsinline>
         <source src="SRC/Background.mp4" type="video/mp4">
@@ -1719,6 +1733,7 @@
         });
     </script>
     <script src="script.js"></script>
+    <script src="Preloader.js"></script>
 
 </body>
 

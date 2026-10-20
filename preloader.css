@@ -1,0 +1,87 @@
+
+
+html.has-preloader,
+html.has-preloader body {
+    overflow: hidden;
+}
+
+.page-preloader {
+    display: none;
+}
+
+html.has-preloader .page-preloader {
+    position: fixed;
+    inset: 0;
+    z-index: 20000;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    background: transparent;
+}
+
+.preloader-name {
+    position: relative;
+    z-index: 1;
+    color: #F5E6B8;
+    font-family: "Michroma", sans-serif;
+    font-size: clamp(1rem, 4vw, 2.5rem);
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+    transition: opacity 0.45s ease, transform 0.45s ease;
+}
+
+.preloader-name::after {
+    display: inline-block;
+    width: 2px;
+    height: 0.9em;
+    margin-left: 0.15em;
+    background: currentColor;
+    content: "";
+    vertical-align: -0.08em;
+    animation: preloader-caret 0.75s steps(2, start) infinite;
+}
+
+.page-preloader.is-exiting .preloader-name {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.preloader-curtains {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    overflow: hidden;
+}
+
+.preloader-curtains span {
+    min-width: 0;
+    min-height: 0;
+    background: #170E08;
+    border: 1px solid rgba(245, 230, 184, 0.12);
+    transition: transform 0.75s cubic-bezier(0.76, 0, 0.24, 1);
+    will-change: transform;
+}
+
+.page-preloader.is-opening .preloader-curtains span {
+    transform: translateY(-101%);
+}
+
+.page-preloader.is-opening .preloader-curtains span:nth-child(2) {
+    transition-delay: 0.22s;
+}
+
+.page-preloader.is-opening .preloader-curtains span:nth-child(3) {
+    transition-delay: 0.44s;
+}
+
+.page-preloader.is-opening .preloader-curtains span:nth-child(4) {
+    transition-delay: 0.66s;
+}
+
+@keyframes preloader-caret {
+    to {
+        visibility: hidden;
+    }
+}
