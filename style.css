@@ -2290,3 +2290,312 @@ a.contact-detail:hover {
 .contact-back-top i {
     font-size: 17px;
 }
+
+
+.education-section {
+    position: relative;
+    width: 100%;
+    padding: 120px 7%;
+    overflow: hidden;
+    isolation: isolate;
+    color: #f4f0e8;
+    background: transparent;
+
+    --education-gold: #BC9F68;
+    --education-light-gold: #F5E6B8;
+    --education-dark-gold: #8C713F;
+    --education-muted: #99958d;
+    --education-line: rgba(188, 159, 104, 0.25);
+}
+
+.education-container {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+.education-header {
+    max-width: 700px;
+    margin: 0 auto 85px;
+    text-align: center;
+}
+
+.education-eyebrow {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--education-gold);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.education-header h2 {
+    margin: 0;
+    font-size: clamp(32px, 5vw, 58px);
+    font-weight: 700;
+    letter-spacing: -1.8px;
+    line-height: 1.15;
+}
+
+.education-header h2 span {
+    color: var(--education-gold);
+}
+
+.education-header p {
+    max-width: 530px;
+    margin: 22px auto 0;
+    color: var(--education-muted);
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+/* Timeline */
+
+.education-timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.education-timeline::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    bottom: 30px;
+    left: 29px;
+    width: 1px;
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        var(--education-gold) 10%,
+        var(--education-line) 85%,
+        transparent
+    );
+}
+
+.education-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 60px minmax(0, 1fr);
+    gap: 30px;
+    align-items: start;
+}
+
+/* Timeline markers */
+
+.education-marker {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgba(188, 159, 104, 0.55);
+    border-radius: 50%;
+    background: #11110f;
+    box-shadow: 0 0 0 7px rgba(188, 159, 104, 0.035);
+    transition:
+        border-color 0.35s ease,
+        box-shadow 0.35s ease,
+        transform 0.35s ease;
+}
+
+.education-marker span {
+    color: var(--education-gold);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.education-item:hover .education-marker {
+    transform: scale(1.07);
+    border-color: var(--education-light-gold);
+    box-shadow:
+        0 0 0 7px rgba(188, 159, 104, 0.07),
+        0 0 25px rgba(188, 159, 104, 0.12);
+}
+
+/* Education cards */
+
+.education-card {
+    position: relative;
+    min-width: 0;
+    padding: 32px 35px;
+    border: 1px solid rgba(188, 159, 104, 0.16);
+    border-radius: 18px;
+    background: rgba(17, 17, 15, 0.76);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    transition:
+        transform 0.4s ease,
+        border-color 0.4s ease,
+        background 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.education-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 25px;
+    width: 75px;
+    height: 2px;
+    background: linear-gradient(
+        90deg,
+        var(--education-gold),
+        transparent
+    );
+    opacity: 0.8;
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(188, 159, 104, 0.42);
+    background: rgba(24, 23, 19, 0.9);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.16);
+}
+
+.education-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.education-period {
+    color: var(--education-gold);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.education-status {
+    padding: 7px 11px;
+    border-radius: 30px;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.upcoming-status {
+    color: var(--education-light-gold);
+    border: 1px solid rgba(245, 230, 184, 0.3);
+    background: rgba(188, 159, 104, 0.08);
+}
+
+.completed-status {
+    color: #a6c9a0;
+    border: 1px solid rgba(166, 201, 160, 0.23);
+    background: rgba(166, 201, 160, 0.06);
+}
+
+.education-level {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--education-muted);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+}
+
+.education-card h3 {
+    margin: 0;
+    color: #f5f1e8;
+    font-size: clamp(21px, 3vw, 29px);
+    font-weight: 700;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+}
+
+.education-card h4 {
+    margin: 10px 0 0;
+    color: var(--education-gold);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+.education-card > p {
+    max-width: 700px;
+    margin: 17px 0 25px;
+    color: #a9a59d;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.education-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(188, 159, 104, 0.13);
+}
+
+.education-institution,
+.education-date {
+    color: #b7b1a6;
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+.education-institution {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.education-institution i {
+    color: var(--education-gold);
+    font-size: 16px;
+}
+
+.education-date {
+    color: var(--education-gold);
+}
+
+/* Closing statement */
+
+.education-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+    margin-top: 75px;
+    text-align: center;
+}
+
+.education-footer-line {
+    display: block;
+    width: 55px;
+    height: 1px;
+    background: var(--education-gold);
+}
+
+.education-footer p {
+    margin: 0;
+    color: #c7c0b3;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    line-height: 1.8;
+}
+
+.education-footer-sub {
+    color: #77736b;
+    font-size: 9px;
+    letter-spacing: 2px;
+    line-height: 1.8;
+}
+
+.education-footer-sub span {
+    padding: 0 8px;
+    color: var(--education-gold);
+}

@@ -1178,3 +1178,179 @@
         transition: none !important;
     }
 }
+
+@media (max-width: 768px) {
+    .education-section {
+        padding: 90px 5%;
+    }
+
+    .education-header {
+        margin-bottom: 55px;
+    }
+
+    .education-header h2 {
+        letter-spacing: -1px;
+    }
+
+    .education-timeline {
+        gap: 25px;
+    }
+
+    .education-item {
+        grid-template-columns: 44px minmax(0, 1fr);
+        gap: 17px;
+    }
+
+    .education-timeline::before {
+        left: 21px;
+    }
+
+    .education-marker {
+        width: 44px;
+        height: 44px;
+    }
+
+    .education-marker span {
+        font-size: 12px;
+    }
+
+    .education-card {
+        padding: 25px 22px;
+        border-radius: 14px;
+    }
+
+    .education-card-top {
+        margin-bottom: 22px;
+    }
+
+    .education-footer {
+        margin-top: 55px;
+    }
+}
+
+/* ==================== MOBILE ==================== */
+
+@media (max-width: 480px) {
+    .education-section {
+        padding: 70px 5%;
+    }
+
+    .education-eyebrow {
+        font-size: 9px;
+        letter-spacing: 2.5px;
+    }
+
+    .education-header {
+        margin-bottom: 42px;
+    }
+
+    .education-header p {
+        font-size: 13px;
+    }
+
+    .education-timeline {
+        gap: 22px;
+    }
+
+    .education-item {
+        grid-template-columns: 32px minmax(0, 1fr);
+        gap: 12px;
+    }
+
+    .education-timeline::before {
+        left: 15px;
+    }
+
+    .education-marker {
+        width: 32px;
+        height: 32px;
+        box-shadow: none;
+    }
+
+    .education-marker span {
+        font-size: 10px;
+    }
+
+    .education-card {
+        padding: 22px 17px;
+    }
+
+    .education-card::before {
+        left: 17px;
+        width: 50px;
+    }
+
+    .education-card-top {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .education-period {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    .education-status {
+        font-size: 8px;
+        padding: 6px 9px;
+    }
+
+    .education-level {
+        font-size: 9px;
+        letter-spacing: 1.5px;
+    }
+
+    .education-card h3 {
+        font-size: 21px;
+    }
+
+    .education-card h4 {
+        font-size: 12px;
+    }
+
+    .education-card > p {
+        font-size: 12px;
+        line-height: 1.8;
+    }
+
+    .education-card-footer {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 7px;
+        padding-top: 15px;
+    }
+
+    .education-institution,
+    .education-date {
+        font-size: 10px;
+    }
+
+    .education-footer {
+        margin-top: 45px;
+    }
+
+    .education-footer p {
+        font-size: 9px;
+        letter-spacing: 1.8px;
+    }
+
+    .education-footer-sub {
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+    .education-footer-sub span {
+        padding: 0 4px;
+    }
+}
+
+/* Respect reduced-motion preferences */
+
+@media (prefers-reduced-motion: reduce) {
+    .education-card,
+    .education-marker {
+        transition: none;
+    }
+}
